@@ -1,0 +1,152 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  background: #f0f0f0;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+img {
+  width: 10%;
+  height: auto;
+}
+.container.dark {
+  background-color: #333;
+  color: white;
+}
+
+/* Title */
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: bolder;
+}
+
+/* Input and Button Styles */
+.input-button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-button-container input,
+.input-button-container select,
+.input-button-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-button-container .treatment-type-input {
+  flex: 1; /* Allows this input to grow and take available space */
+  max-width: 100%; /* Prevents it from overflowing */
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  border-radius: 10px; /* Ensure action-buttons also have rounded corners */
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #ac5be6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: inline-block;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+button:hover {
+  background-color: #a29bfe;
+  border-radius: 10px; /* Ensure hover respects border-radius */
+}
+
+/* Dark Mode Toggle */
+.theme-toggle-btn {
+  background-color: #1b3950;
+  transition: background-color 0.3s;
+}
+
+.theme-toggle-btn:hover {
+  background-color: #8d9298;
+}
+
+/* Response Box */
+.response-box {
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+}
+
+footer a {
+  color: #0984e3;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.saved-responses {
+  margin-top: 20px;
+}
+
+.saved-response {
+  background: #dfe6e9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  .input-button-container {
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  img {
+    width: 5%;
+  }
+
+  .input-button-container input,
+  .input-button-container select,
+  .input-button-container textarea {
+    width: 70%;
+    border-radius: 10px;
+  }
+
+  .action-buttons {
+    justify-content: flex-end;
+  }
+}
